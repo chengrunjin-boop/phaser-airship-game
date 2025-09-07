@@ -1,0 +1,19 @@
+{
+  "name": "game1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Phaser game bundled with Parcel",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --public-url /YOUR-REPO-NAME/ --dist-dir docs"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4",
+    "process": "^0.11.10"
+  }
+}

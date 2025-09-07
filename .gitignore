@@ -1,0 +1,16 @@
+# dependencies & caches
+node_modules/
+.parcel-cache/
+dist/
+
+# keep docs/ if you deploy Pages from /docs
+# docs/
+
+# misc
+*.map
+.DS_Store
+*.log
+npm-debug.log*
+.idea/
+.vscode/
+Thumbs.db
