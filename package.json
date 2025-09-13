@@ -4,8 +4,8 @@
   "private": true,
   "description": "Phaser game bundled with Parcel",
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url /YOUR-REPO-NAME/ --dist-dir docs"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url /YOUR-REPO-NAME/ --dist-dir docs"
   },
   "keywords": [],
   "license": "ISC",
