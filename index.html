@@ -1,8 +1,22 @@
 <html>
     <head>
         <title>My Phaser Game</title>
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden; /* Prevents scrollbars */
+            }
+        </style>
     </head>
     <body>
+        <script type="importmap">
+        {
+            "imports": {
+                "phaser": "https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.js"
+            }
+        }
+        </script>
+
         <script type="module" src="./src/main.js"></script>
     </body>
 </html>
