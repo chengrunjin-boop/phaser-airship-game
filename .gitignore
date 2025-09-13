@@ -6,11 +6,17 @@ dist/
 # keep docs/ if you deploy Pages from /docs
 # docs/
 
-# misc
-*.map
+# macOS
 .DS_Store
+
+# Logs
+logs
 *.log
 npm-debug.log*
-.idea/
-.vscode/
-Thumbs.db
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Node
+node_modules/
+dist/
