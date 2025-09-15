@@ -48,7 +48,18 @@ gondola: {
 landingGear: [
   { xFrac: 0.25, strutLen: 10, strutW: 3, wheelR: 2 ,triangleScale: -1},
   { xFrac: 0.76, strutLen: 27, strutW: 3, wheelR: 2 ,triangleTopFrac: 0.7, topOffset: 3, triangleScale: 6},
-]
+],
+
+// --- NEW: Add this motors array ---
+motors: [
+    // Four motors on the main body
+    { xFrac: 0.35, yOffset: 25 },
+    { xFrac: 0.50, yOffset: 15 },
+    { xFrac: 0.60, yOffset: 5 },
+    { xFrac: 0.8, yOffset: -5 },
+    // One motor near the tail
+    { xFrac: 0.02, yOffset: -3 },
+  ]
 
 
 

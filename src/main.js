@@ -1,23 +1,24 @@
-
-import Game from './scenes/Game.js'
+// src/main.js
+import Game from './scenes/Game.js';
+import TitleScreen from './scenes/TitleScreen.js'; // Import the TitleScreen scene
 
 const config = {
     type: Phaser.AUTO,
-    width: window.innerWidth,       // full browser width
-    height: window.innerHeight,     // full browser height
+    width: window.innerWidth,
+    height: window.innerHeight,
     backgroundColor: '#a6d5ff',
     physics: {
         default: 'matter',
         matter: {
             debug: false,
-            gravity: { y: 0 } // no global gravity, we control helium balls manually
+            gravity: { y: 0 }
         }
     },
-        audio: {
+    audio: {
         disableWebAudio: false
     },
-    scene: [Game]
-}
-
+    // --- MODIFIED: Load TitleScreen first, then Game ---
+    scene: [TitleScreen, Game]
+};
 
 new Phaser.Game(config);
